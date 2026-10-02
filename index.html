@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Dear Afriza 🌸</title>
+    <meta name="description" content="A little story made with love.">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#FCEAF1">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Cormorant+Garamond:ital,wght@0,600;1,400&family=Parisienne&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Third Party Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/confetti.browser.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css?v=99">
+</head>
+
+<body>
+
+    <!-- =========================================
+    LOADING SCREEN
+    ========================================= -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-screen__content">
+            <div class="loading-screen__heart">💖</div>
+            <h2 class="loading-screen__title">Our Little Fairytale</h2>
+            <p class="loading-screen__subtitle">Memuat kenangan indah...</p>
+            <div class="loading-screen__bar">
+                <div class="loading-screen__progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================== -->
+    <!-- PIRINGAN HITAM -->
+    <!-- ===================================== -->
+
+    <!-- <div id="loader"></div>
+
+    <div class="music-widget">
+        <div class="vinyl-record" id="vinyl">
+            <div class="vinyl-center"></div>
+        </div>
+        <span class="music-label">🎵 Play Our Song</span>
+    </div> -->
+
+    <!-- ===================================== -->
+    <!-- MUSIC -->
+    <!-- ===================================== -->
+
+    <audio id="bgm-audio" preload="auto" loop>
+        <source src="music/klop.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung elemen audio.
+    </audio>
+
+    <!-- ===================================== -->
+    <!-- PROGRESS BAR -->
+    <!-- ===================================== -->
+
+    <div class="progress-bar">
+        <span></span>
+    </div>
+
+    <!-- ===========================
+       GLOBAL BACKGROUND
+    ============================ -->
+
+    <div id="bg-layer"></div>
+
+    <!-- ===================================== -->
+    <!-- MAIN -->
+    <!-- ===================================== -->
+
+    <main>
+
+        <!-- ==========================
+            HERO
+        =========================== -->
+
+        <section id="hero" class="hero" data-bg="hero">
+
+            <div class="hero__background">
+
+                <div class="sakura sakura-1">🌸</div>
+                <div class="sakura sakura-2">🌸</div>
+                <div class="sakura sakura-3">🌸</div>
+                <div class="sakura sakura-4">🌸</div>
+                <div class="sakura sakura-5">🌸</div>
+            
+                <div class="hero__glow glow-1"></div>
+                <div class="hero__glow glow-2"></div>
+
+            </div>
+
+            <div class="container">
+
+                <div class="hero__card">
+
+                    <p class="hero__eyebrow">
+                        🌸 Our Little Fairytale
+                    </p>
+
+                    <h1 class="hero__title">
+                        Untuk <span>Afriza Dini Andalin</span>
+                    </h1>
+
+                    <p class="hero__description">
+                        Ada sebuah cerita yang sudah lama ingin aku sampaikan.
+                        Mungkin bukan cerita yang sempurna,
+                        tetapi setiap bagiannya selalu memiliki kamu di dalamnya.
+                    </p>
+
+                    <a href="#transition-1" id="btn-start" class="hero__button">
+                        Mulai Perjalanan ❤️
+                    </a>
+
+                    <div class="hero__scroll">
+                        <span></span>
+                        <p>Scroll</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+        TRANSITION : CHAPTER I
+        ========================================= -->
+
+        <section class="transition" id="transition-1" data-bg="chapter1">
+
+            <div class="transition__lights">
+                <span class="light light--1"></span>
+                <span class="light light--2"></span>
+                <span class="light light--3"></span>
+            </div>
+
+            <div class="transition__container">
+
+                <span class="transition__chapter reveal reveal-up">
+                    CHAPTER I
+                </span>
+
+                <h2 class="transition__title reveal reveal-up">
+                    Awal dari Semuanya
+                </h2>
+
+                <p class="transition__date reveal reveal-up">
+                    23 Oktober 2025
+                </p>
+
+                <p class="transition__subtitle reveal reveal-up">
+                    Sebuah pertemuan sederhana di Bogor yang mengubah segalanya.
+                </p>
+
+                <div class="transition__divider reveal reveal-scale"></div>
+
+                <blockquote class="transition__quote reveal reveal-scale">
+                    "Setiap cerita besar, selalu dimulai dari sebuah pertemuan kecil."
+                </blockquote>
+
+                <div class="transition__scroll reveal reveal-up">
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- CHAPTER I -->
+        <!-- ===================================== -->
+
+        <section class="chapter" id="chapter-1" data-bg="chapter1">
+
+            <div class="container">
+
+                <div class="chapter-divider">
+                    <span>✦ 🌸 ✦</span>
+                </div>
+
+                <blockquote class="chapter__quote reveal reveal-scale">
+                    "Aku tidak pernah menyangka, bangku yang sudah ditentukan panitia akan menjadi awal dari cerita ini."
+                </blockquote>
+
+                <div class="chapter__separator"></div>
+
+                <div class="story__line reveal reveal-scale"></div>
+
+                <article class="story__card reveal reveal-up">
+
+                    <div class="story__meta reveal reveal-up">
+                        <div class="story__date">📅 23 Oktober 2025</div>
+                        <div class="story__location">📍 Bogor</div>
+                    </div>
+
+                    <div class="story__text reveal reveal-right">
+                        <p>
+                            Hari itu pertama kalinya kita dipertemukan. Satu ruangan kelas dan satu bangku meja saat diklat di Bogor. Ceritanya 
+                            aku datang lebih dulu dan nempatin bangku yang udah ditentukan panitia. Di meja sampingku tertulis sebuah nama 
+                            <strong>"Afriza Dini Andalin."</strong> nama yang indah namun aku tidak tahu siapa pemilik nama itu. 
+                        </p>
+
+                        <p>
+                            Tidak lama kemudian, seorang wanita datang menyapaku, <em>"Pagi bang."</em> Dengan suara tegas dan lembut, 
+                            senyum yang manis dan tatapan mata yang indah seakan-akan memaksa mulutku untuk tersenyum lebar menyambut sapaan itu.
+                            Yupp ternyata itu kamu sang pemilik nama indah. First impression lihat kamu hatiku ngebatin, 
+                            <em>"wihhh, cantik juga nih orang,"</em> hehe dasar aku.
+                        </p>
+
+                        <p>
+                            Di awal pertemuan itu, kita mulai saling lempar pertanyaan. Aku ingat banget saat kamu tanya bulan dan 
+                            tahun kelahiranku, yang ternyata umur kita cuma selisih satu bulan! Kamu juga sempat menanyakan tinggiku karena 
+                            merasa aku tinggi banget wkwk.
+                        </p>
+
+                        <p>
+                            Lalu ada satu momen kecil yang ga pernah aku lupain, yaitu saat kamu menyentuh lengan kiriku dengan jarimu. 
+                            Momen sesederhana itu membuatku merasa kita mendadak dekat, padahal baru kenal beberapa jam bahkan hitungan 
+                            menit. Ditambah lagi saat ngobrol, kita kadang saling mendekatkan muka berbisik. Duh, aku pangling banget 
+                            liat mata indah dan senyummu sedekat itu.
+                        </p>
+
+                        <p>
+                            Mungkin ini titik awal aku mulai tertarik sama kamu. Ketertarikan itu langsung aku buktiin waktu kamu terlambat 
+                            masuk kelas setelah istirahat karena ketiduran, lalu aku modus dengan memberikan perhatian kecil mengingatkanmu 
+                            agar segera masuk kelas lewat pesan WhatsApp singkat "udah mulai mbak." Aku yakin banget, kalau saat itu aku ga 
+                            tertarik sama kamu, aku bakal bodo amat. jahat banget yaa wkwkwk
+                        </p>
+
+                        <p>
+                            Namun sayangnya... di sepanjang diklat aku cuma menikmati perasaan tertarik itu tanpa melakukan tindakan yang lebih jauh ataupun 
+                            mencari perhatiannya kamu. kamu tau? hal yang benar-benar bisa aku nikmatin itu cuma mandangin kamu pas kamu sedang presentasi. 
+                            Aku juga seneng banget sama momen kita dipertemukan lagi di satu kelompok yang sama setelah kita pisah bangku di hari-hari 
+                            selanjutnya, apalagi duduk kita persis sampingan kemarin. Walaupun saat itu kita fokus ke kelompok dan ga banyak ngobrol tapi 
+                            aku selalu menikmati setiap momen kedekatan kita kemarin. Selanjutnya yang aku inget adalah momen sapa menyapa, gatau kenapa 
+                            pas kamu yang nyapa tuh, rasanya beda banget kek ada rasa bahagia-bahagianya wkwk.
+                        </p>
+                    </div>
+
+                    <div class="scrapbook-gallery reveal reveal-up">
+                        <div class="story__photo story__photo--landscape tilt-left">
+                            <span class="photo-tape tape-top"></span>
+                            <img src="images/Chapter1.jpeg" alt="Pertemuan Pertama di Bogor">
+                            <figcaption class="story__caption">
+                                Pertemuan pertama saat Diklat di Bogor ✨
+                            </figcaption>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="chapter__end reveal reveal-scale">
+                    <span>To be continued...</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+        TRANSITION : CHAPTER II
+        ========================================= -->
+
+        <section class="transition" id="transition-2" data-bg="chapter2">
+
+            <div class="transition__lights">
+                <span class="light light--1"></span>
+                <span class="light light--2"></span>
+                <span class="light light--3"></span>
+            </div>
+
+            <div class="transition__container">
+
+                <span class="transition__chapter reveal reveal-up">
+                    CHAPTER II
+                </span>
+
+                <h2 class="transition__title reveal reveal-up">
+                    Titik Balik & Trik Rahasia
+                </h2>
+
+                <p class="transition__date reveal reveal-up">
+                    14 November 2025
+                </p>
+
+                <p class="transition__subtitle reveal reveal-up">
+                    Saat takdir (dan sedikit strategi) mempertemukan kita kembali.
+                </p>
+
+                <div class="transition__divider reveal reveal-scale"></div>
+
+                <blockquote class="transition__quote reveal reveal-scale">
+                    "Dari sekian banyak cara, sebuah story tentang Tomohon jadi alasan kita mengobrol lagi."
+                </blockquote>
+
+                <div class="transition__scroll reveal reveal-up">
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- CHAPTER II -->
+        <!-- ===================================== -->
+
+        <section class="chapter" id="chapter-2" data-bg="chapter2">
+
+            <div class="container">
+
+                <div class="chapter-divider">
+                    <span>✦ 🌸 ✦</span>
+                </div>
+
+                <blockquote class="chapter__quote reveal reveal-scale">
+                    "Aku cuma buat satu story khusus untukmu, dan Dewi Fortuna benar-benar berpihak padaku."
+                </blockquote>
+
+                <div class="chapter__separator"></div>
+
+                <div class="story__line reveal reveal-scale"></div>
+
+                <article class="story__card reveal reveal-up">
+
+                    <div class="story__meta reveal reveal-up">
+                        <div class="story__date">📅 14 November 2025</div>
+                        <div class="story__location">📍 Tomohon & WhatsApp</div>
+                    </div>
+
+                    <div class="story__text reveal reveal-right">
+                        <p>
+                            Aku gak tahu ini memang takdir atau apa wkwk, tapi tanggal 14 November 2025 ini aku sebut sebagai <strong>Tahap Titik Balik</strong>.
+                        </p>
+
+                        <p>
+                            Setelah melewati jeda panjang—masa kekosongan tanpa interaksi atau kontak sama sekali, di mana aku cuma jadi <em>viewer</em> setia story kamu—jujur dalam hati aku pengen banget bisa ngobrol lagi. Bahkan, aku sudah ada niat sengaja: kedepannya mau coba membalas story WhatsApp kamu biar ada alasan buat lanjut ngobrol hehe.
+                        </p>
+
+                        <p>
+                            Tapi hari itu, aku mengambil langkah yang lebih nekat. Aku iseng mengunggah story WhatsApp berisi foto hewan-hewan ekstrem yang dijual di Pasar Ekstrem Tomohon. Dan fakta rahasianya: <strong>story itu memang sengaja aku privasi dan setting khusus cuma buat kamu!</strong> Tujuannya jelas banget: cari perhatianmu wkwk.
+                        </p>
+
+                        <p>
+                            Dan akhirnya, Dewi Fortuna benar-benar berpihak padaku. Seolah-olah apa yang aku pikirkan dan harapkan langsung dikabulkan semesta saat itu juga. Tiba-tiba kamu membalas story itu dengan rasa penasaranmu yang tinggi!
+                        </p>
+
+                        <p>
+                            Di situ aku beneran girang dan tersenyum lebar banget wkwkwk. Gimana gak bahagia coba, saat rencana dan harapanku berhasil sesuai ekspektasi?
+                        </p>
+
+                        <p>
+                            Tentu saja kesempatan emas ini langsung aku manfaatkan sebaik-baiknya. Aku putar otak gimana caranya supaya interaksi kita gak berhenti begitu saja setelah membahas story itu. Aku gak mau kehilangan momen berharga ini lagi. <em>And I think... I made it!</em>
+                        </p>
+                    </div>
+
+                    <div class="scrapbook-gallery reveal reveal-up">
+                        <div class="story__photo story__photo--landscape tilt-right">
+                            <span class="photo-tape tape-top"></span>
+                            <img src="images/Chapter2.jpeg" alt="Story Tomohon">
+                            <figcaption class="story__caption">
+                                Titik balik komunikasi kita ✨
+                            </figcaption>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="chapter__end reveal reveal-scale">
+                    <span>To the next step...</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+        TRANSITION : CHAPTER III
+        ========================================= -->
+
+        <section class="transition" id="transition-3" data-bg="chapter3">
+
+            <div class="transition__lights">
+                <span class="light light--1"></span>
+                <span class="light light--2"></span>
+                <span class="light light--3"></span>
+            </div>
+
+            <div class="transition__container">
+
+                <span class="transition__chapter reveal reveal-up">
+                    CHAPTER III
+                </span>
+
+                <h2 class="transition__title reveal reveal-up">
+                    Nekat Demi Kamu
+                </h2>
+
+                <p class="transition__date reveal reveal-up">
+                    3 Januari 2026
+                </p>
+
+                <p class="transition__subtitle reveal reveal-up">
+                    Penerbangan Manado - Ternate, dan 24 jam yang paling membahagiakan.
+                </p>
+
+                <div class="transition__divider reveal reveal-scale"></div>
+
+                <blockquote class="transition__quote reveal reveal-scale">
+                    "24 jam memang singkat, tapi rasa nyamannya bertahan sangat lama."
+                </blockquote>
+
+                <div class="transition__scroll reveal reveal-up">
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- CHAPTER III -->
+        <!-- ===================================== -->
+
+        <section class="chapter" id="chapter-3" data-bg="chapter3">
+
+            <div class="container">
+
+                <div class="chapter-divider">
+                    <span>✦ 🌸 ✦</span>
+                </div>
+
+                <blockquote class="chapter__quote reveal reveal-scale">
+                    "Sebagai cowok yang gak bisa ditantang, aku gas penerbangan ke Ternate cuma buat nemuin kamu."
+                </blockquote>
+
+                <div class="chapter__separator"></div>
+
+                <div class="story__line reveal reveal-scale"></div>
+
+                <article class="story__card reveal reveal-up">
+
+                    <div class="story__meta reveal reveal-up">
+                        <div class="story__date">📅 3 Januari 2026</div>
+                        <div class="story__location">📍 Manado ✈️ Ternate</div>
+                    </div>
+
+                    <div class="story__text reveal reveal-right">
+                        <p>
+                            Seiring berjalannya waktu, komunikasi kita makin melaju intens. Kita membahas banyak hal—mulai dari hal-hal 
+                            random yang gak penting, kegiatan sehari-hari, sampai obrolan mendalam soal hubungan, keluarga, masa lalu, 
+                            dan keraguan-keraguan yang sempat ada.
+                        </p>
+
+                        <p>
+                            Dari situ aku mulai yakin, kalau kita berdua punya rasa yang sama.
+                        </p>
+
+                        <p>
+                            Berawal dari keisenganku bilang mau nemuin kamu ke Ternate, dan responmu malah nantangin. Sebagai cowok yang 
+                            ga bisa ditantang, aku langsung ambil kesempatan itu. <strong>Aku gas penerbangan ke Ternate demi nemuin kamu.</strong>
+                        </p>
+
+                        <p>
+                            Berbekal rasa sayang dan cinta yang aku punya, aku ga peduli jarak atau kerepotannya. Yang penting tujuanku cuma satu yaitu 
+                            ketemu dan jalan bareng kamu disana.
+                        </p>
+
+                        <p>
+                            3 Januari 2026, aku terbang ke Ternate dengan perasaan yang campur aduk banget. Senang, bahagia, deg-degan, gak sabaran... 
+                            Semua rasa itu campur jadi satu, mulai dari nunggu di Bandara Manado sampai mendarat di Ternate. Pikiranku kek ihh kok 
+                            bisa yaa kita main berdua wkwk
+                        </p>
+
+                        <p>
+                            <em>And finally...</em> aku beneran ketemu sama orang yang bikin aku jatuh cinta sejak awal.
+                        </p>
+
+                        <p>
+                            Duh, seneng banget rasanya. Mana kamu nyambut aku se-excited itu hampir terjadi momen mau pelukan tapi gak jadi wkwk.
+                            Sampe sekarang aku pengen di momen itu pelukannya terjadi yahaha. Pokoknya satu kata buat hari itu, <strong>Bahagia.</strong>
+                        </p>
+
+                        <p>
+                            Kita jalan berdua keliling Ternate sesuai <em>rundown</em> yang udah kita susun bareng sebelum ketemu. Dan untuk 
+                            pertama kalinya... aku nyentuh dan genggam tangan kamu. jujur aku gabakalan nyangka bisa bersentuhan langsung 
+                            sama orang yang sangat-sangat menarik perhatianku, rasanya nyaman banget, bener-bener berasa saling memiliki. eaaa
+                        </p>
+
+                        <p>
+                            Walaupun sedihnya waktu kita terasa sangat-sangat kurang karena cuma ada 24 jam sebelum harus berpisah lagi, 
+                            hari itu tetap jadi salah satu hari terbaik dalam hidupku.
+                        </p>
+                    </div>
+
+                    <!-- GRID FOTO CHAPTER III -->
+                    <div class="grid-2-rows reveal reveal-up">
+                        <div class="story__photo story__photo--landscape tilt-left">
+                            <span class="photo-tape tape-top"></span>
+                            <img src="images/Chapter3.1.jpeg" alt="Kenangan Chapter 3 - 1">
+                            <figcaption class="story__caption">Momen manis pertama 🍯</figcaption>
+                        </div>
+
+                        <div class="story__photo story__photo--landscape tilt-right">
+                            <span class="photo-tape tape-top"></span>
+                            <img src="images/Chapter3.2.jpeg" alt="Kenangan Chapter 3 - 2">
+                            <figcaption class="story__caption">Perjalanan tak terlupakan ❤️</figcaption>
+                        </div>
+
+                        <div class="story__photo story__photo--landscape tilt-right">
+                            <span class="photo-tape tape-top"></span>
+                            <img src="images/Chapter3.3.jpeg" alt="Kenangan Chapter 3 - 3">
+                            <figcaption class="story__caption">Senyum tawa bersamamu 🌸</figcaption>
+                        </div>
+
+                        <div class="story__photo story__photo--landscape tilt-left">
+                            <span class="photo-tape tape-top"></span>
+                            <img src="images/Chapter3.4.jpeg" alt="Kenangan Chapter 3 - 4">
+                            <figcaption class="story__caption">Setiap detik bersamamu ☕</figcaption>
+                        </div>
+                    </div>
+
+                </article>
+
+                <div class="chapter__end reveal reveal-scale">
+                    <span>To the last chapter...</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+        TRANSITION : CHAPTER IV
+        ========================================= -->
+
+        <section class="transition" id="transition-4" data-bg="chapter4">
+
+            <div class="transition__lights">
+                <span class="light light--1"></span>
+                <span class="light light--2"></span>
+                <span class="light light--3"></span>
+            </div>
+
+            <div class="transition__container">
+
+                <span class="transition__chapter reveal reveal-up">
+                    CHAPTER IV
+                </span>
+
+                <h2 class="transition__title reveal reveal-up">
+                    Melunasi Rindu & Kedewasaan
+                </h2>
+
+                <p class="transition__date reveal reveal-up">
+                    13 Juni 2026
+                </p>
+
+                <p class="transition__subtitle reveal reveal-up">
+                    Pertemuan kedua yang penuh rasa, dinamika, dan saling menguatkan.
+                </p>
+
+                <div class="transition__divider reveal reveal-scale"></div>
+
+                <blockquote class="transition__quote reveal reveal-scale">
+                    "Di antara tawa, masalah, dan emosi yang campur aduk, aku makin bersyukur memiliki kamu."
+                </blockquote>
+
+                <div class="transition__scroll reveal reveal-up">
+                    <span></span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================================== -->
+        <!-- CHAPTER IV -->
+        <!-- ===================================== -->
+
+        <section class="chapter" id="chapter-4" data-bg="chapter4">
+
+            <div class="container">
+
+                <div class="chapter-divider">
+                    <span>✦ 🌸 ✦</span>
+                </div>
+
+                <blockquote class="chapter__quote reveal reveal-scale">
+                    "Banyak hal yang kita lalui hari itu, tapi satu yang pasti, beruntungnya aku punya kamu."
+                </blockquote>
+
+                <div class="chapter__separator"></div>
+
+                <div class="story__line reveal reveal-scale"></div>
+
+                <article class="story__card reveal reveal-up">
+
+                    <div class="story__meta reveal reveal-up">
+                        <div class="story__date">📅 13 Juni 2026</div>
+                        <div class="story__location">📍 Pertemuan Kedua</div>
+                    </div>
+
+                    <div class="story__text reveal reveal-right">
+                        <p>
+                            13 Juni 2026 menjadi momen pertemuan kedua kita. Sebuah hari yang benar-benar penuh warna berisi campuran 
+                            pengalaman baru, luapan emosi, dinamika masalah, hingga kebahagiaan yang akhirnya pecah.
+                        </p>
+
+                        <p>
+                            Di hari ini, kita akhirnya membayar tuntas semua rasa kangen yang sudah kita tabung selama beberapa bulan 
+                            terakhir. Padahal, kalo diinget-inget lagi, banyak banget dinamika dan pertimbangan sebelum pertemuan kedua 
+                            ini benar-benar terwujud. Tapi syukurlah, kita tetap bisa memperjuangkan dan merealisasikannya.
+                        </p>
+
+                        <p>
+                            Di pertemuan ini, kita terasa jauh lebih dekat dari sebelumnya. Kita benar-benar berjalan sebagai sepasang 
+                            kekasih yang utuh. 
+                        </p>
+
+                        <p>
+                            Meskipun begitu, hari itu juga menjadi puncak emosional bagi kita berdua. Banyak pikiran yang campur aduk. 
+                            Dari lubuk hatiku yang paling dalam, aku mau bilang terima kasih banyak untuk kamu yang masih mau 
+                            merealisasikan beberapa <em>rundown</em> yang kita buat, walaupun ada beberapa hal yang belum sempat terlaksana.
+                        </p>
+
+                        <p>
+                            Aku juga mau minta maaf kalau di saat-saat tertentu kemarin sempat terasa seperti <em>grumpy night</em> untuk kita. 
+                            Namun dari semua itu, aku sangat bersyukur dan bangga karena kita bisa saling menguatkan dan melewatinya bersama.
+                        </p>
+
+                        <p>
+                            Sungguh, beruntungnya aku memiliki kamu di hidupku.
+                        </p>
+                    </div>
+
+                    <!-- GRID FOTO CHAPTER IV -->
+                    <div class="grid-2-rows reveal reveal-up">
+                        <div class="story__photo story__photo--landscape tilt-left">
+                            <span class="photo-tape tape-top"></span>
+                            <img src="images/Chapter4.1.jpeg" alt="Kenangan Chapter 4 - 1">
+                            <figcaption class="story__caption">Rindu yang terbayar tuntas 🤍</figcaption>
+                        </div>
+
+                        <div class="story__photo story__photo--landscape tilt-right">
+                            <span class="photo-tape tape-top"></span>
+                            <img src="images/Chapter4.2.jpeg" alt="Kenangan Chapter 4 - 2">
+                            <figcaption class="story__caption">Perjuangan dan cerita baru kita 📜</figcaption>
+                        </div>
+                    </div>    
+
+                </article>
+
+                <div class="chapter__end reveal reveal-scale">
+                    <span>To our future story...</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================================
+            TRANSITION : CONFESSION & LETTER
+        ========================================= -->
+
+        <section class="transition" id="transition-ending" data-bg="confession">
+            <div class="transition__lights">
+                <span class="light light--1"></span>
+                <span class="light light--2"></span>
+                <span class="light light--3"></span>
+            </div>
+            <div class="transition__container">
+                <span class="transition__chapter reveal reveal-up">THE FINAL CHAPTER</span>
+                <h2 class="transition__title reveal reveal-up">Sebuah Surat untuk Dini</h2>
+                <p class="transition__date reveal reveal-up">Hari Ini & Seterusnya</p>
+                <p class="transition__subtitle reveal reveal-up">Satu langkah kecil menuju perjalanan baru kita.</p>
+                <div class="transition__divider reveal reveal-scale"></div>
+                <blockquote class="transition__quote reveal reveal-scale">
+                    "Terima kasih sudah bertahan dan menjadi alasan di balik senyuman ini."
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- =========================================
+            1. REFLECTION SECTION
+        ========================================= -->
+        <section class="reflection-section" id="reflection-section" data-bg="confession">
+            <div class="container">
+                <div class="reflection-card reveal reveal-up">
+                    
+                    <div class="reflection-header">
+                        <span class="reflection-badge">✨ Catatan Kecilku</span>
+                        <h2>Untuk Afriza Dini Andalin</h2>
+                    </div>
+
+                    <div class="reflection-content">
+                        <p>
+                            Dari bangku diklat di Bogor, cerita sederhana ini dimulai. Dari sebuah trik story WA hewan ekstrem Tomohon, obrolan kita mengalir tanpa henti. Dari penerbangan nekat 24 jam ke Ternate, hingga pertemuan kedua kita yang penuh dinamika dan air mata rindu...
+                        </p>
+                        <p>
+                            Terima kasih ya sudah hadir di hidupku. Terima kasih sudah menerima kekuranganku, menyambut kesenanganku, dan mau saling menguatkan di saat-saat paling emosional. Beruntung banget aku bisa punya kamu.
+                        </p>
+                        <p class="reflection-highlight">
+                            Hari ini, lewat halaman kecil yang kubuat khusus untukmu, ada satu hal terakhir yang mau aku sampaikan...
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================================
+            2. FINAL CHAPTER & CONFESSION
+        ========================================= -->
+        <section id="final-chapter" class="final-chapter reveal">
+            <div class="container">
+                
+                <!-- Amplop Interaktif -->
+                <div class="envelope-wrapper">
+                    <div id="envelope" class="envelope">
+                        <div class="envelope__click-text">
+                            <span class="envelope__icon">💌</span>
+                            <p>Klik untuk membaca pesan rahasia</p>
+                        </div>
+                        
+                        <!-- Isi Surat -->
+                        <div id="letter" class="letter" style="display: none;">
+                            <p class="letter__body">
+                                Makasih ya udah hadir dan bikin hari-hariku jauh lebih berwarna. Aku nggak mau cerita manis ini berhenti di sini aja...
+                            </p>
+                            <h3 class="letter__question">Maukah kamu jadi pacarku? ❤️</h3>
+                            
+                            <!-- Tombol Pilihan -->
+                            <div class="letter__actions">
+                                <button id="btn-yes" class="btn btn--primary">Ya, Aku Mau! ❤️</button>
+                                <button id="btn-no" class="btn btn--secondary">Enggak Dulu 😜</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pesan Rahasia Balasan (Muncul setelah klik YES) -->
+                    <!-- Pesan Rahasia / Balasan -->
+                    <div id="secret-message" class="secret-message hidden" style="display: none;">
+                        <h3>Yeay! Best Day Ever! 🎉✨</h3>
+                        
+                        <!-- FITUR HITUNGAN HARI -->
+                        <div class="day-counter">
+                            <span class="day-counter__number" id="day-count">0</span>
+                            <span class="day-counter__label">Hari Sejak Pertemuan Pertama Kita ❤️</span>
+                        </div>
+
+                        <p>Terima kasih sudah menjadi bagian terindah dalam ceritaku. Janji bakal bikin kamu bahagia terus!</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================== -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Made with ❤️ for Afriza Dini Andalin — Our Little Fairytale</p>
+        </div>
+    </footer>
+
+    <!-- =========================================
+        FLOATING MUSIC CAPSULE PLAYER
+    ========================================= -->
+
+    <!-- SATU-SATUNYA ELEMEN MUSIC PLAYER -->
+    <div class="music-capsule">
+        <div class="music-capsule__vinyl"></div>
+        <div class="music-capsule__info">
+            <span class="music-icon">🎵</span>
+            <span>Play Our Song</span>
+        </div>
+        <button class="music-toggle-btn" aria-label="Toggle Music">
+            <span class="music-floating__icon">▶️</span>
+        </button>
+    </div>
+
+    <!-- LIGHTBOX MODAL (FOTO MEMBESAR) -->
+
+    <div id="image-modal" class="image-modal">
+        <span class="image-modal__close">&times;</span>
+        <img class="image-modal__content" id="modal-img" alt="Enlarged Photo">
+        <div id="modal-caption" class="image-modal__caption"></div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
